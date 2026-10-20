@@ -1,118 +1,126 @@
 # Development of an Agentic AI Platform for University Academic Advising and Degree Planning
 
-A diploma project at **Astana IT University (AITU)** to develop a web and mobile platform for academic advising, verified grade calculations, degree planning and preparation for master's study.
+Diploma project by **Medina Nurbek**, Software Engineering, Astana IT University (AITU). The proposed platform combines confirmed student records, reproducible academic calculations, degree audits, constraint-checked course plans and preparation for selected master's programmes.
 
-**Status:** requirements and research stage. The functions described below are planned deliverables; application code and deployment instructions are not yet available. Research snapshot: **14 October 2026**.
+**Current status — 20 October 2026:** analysis, design and an interactive browser prototype. The prototype runs locally with synthetic data and scripted responses. A production backend, live AI, actual transcript parsing and installable Android/iOS applications are not implemented. This branch is a candidate documentation baseline pending selected significant-change review by the supervisor.
 
-## Project team
-
-| Role | Member |
-| --- | --- |
-| Team member | **Medina Nurbek**, Year 3, Software Engineering, Astana IT University |
-| Supervisor | **Кыдырбекова Айгерим Балгабаевна**, Assistant Professor, School of Software Engineering |
-
-Medina Nurbek is responsible for user research, requirements, architecture, backend, website and mobile application development, integration, testing and documentation. The supervisor provides academic guidance and supports access to curriculum materials.
+- [Project documentation](docs/README.md)
+- [YouTrack project and real ACP tasks](https://medina-academic-planner.youtrack.cloud/issues/ACP)
+- [Interactive prototype source](apps/web-prototype/index.html)
+- [Contribution and review workflow](CONTRIBUTING.md)
+- [24 October submission checklist](docs/submission-checklist.md)
 
 ## Problem statement
 
-Academic decisions require students to combine grades, credits, assessment weights, curriculum requirements and university rules. Students may need to determine whether a target grade is achievable, compare GPA scenarios, identify outstanding graduation requirements or check that a course sequence satisfies prerequisites.
+Academic decisions require students to combine grades, credits, assessment weights, curriculum requirements and applicable university rules. They need to check whether targets are achievable, identify remaining degree requirements and sequence courses under prerequisites, offerings and credit limits. Master's preparation adds official admission requirements, documents, deadlines and funding information.
 
-AITU already provides myDu and Peer Advisor. The proposed contribution is a persistent, student-confirmed academic profile combined with reproducible calculations, explicit scenario comparison and automatic plan validation against structured curriculum rules. The project does not assume that existing tools are ineffective; their capabilities and the added value of this approach need evaluation.
+AITU already offers myDU and Peer Advisor. The project investigates the value of a persistent, student-confirmed record connected to explicit calculations, saved scenarios, source-backed advice and independent plan validation. It does not claim that competing systems lack all these functions or that a preferred interface proves superiority.
 
-Students considering master's study also need to interpret programme requirements, deadlines, document lists and funding information. A dedicated module will organise official information and compare published requirements with the student's profile.
+## Users and expected outcomes
 
-## Target users and aim
+Primary users are AITU students across the declared official programme/cohort inventory, including graduating students considering master's study. An authorised operator maintains sources/configurations. Academic advisors and university representatives support source review and evaluation when arranged.
 
-Primary users are students across AITU educational programmes, including graduating students preparing for master's applications. Academic advisors and university representatives will support validation and testing.
+Expected outcomes are working web/Android/iOS clients with a shared backend; confirmed transcript import and manual scores; verified calculation, audit and planning services; sourced master's comparisons/checklists; one documented second-university adaptation; and reproducible evaluation evidence.
 
-The aim is to develop and evaluate a configurable agentic AI platform that supports academic decisions through verified calculations, institutional documents and structured student data. Adaptation will also be tested on one documented programme at another Kazakhstani university.
+## Team and responsibilities
 
-## Planned functions
-
-| Area | Planned functionality |
+| Member | Responsibility |
 | --- | --- |
-| Academic profile | Transcript upload, field extraction, student review and correction, persistent records and manual entry of current assessment results |
-| Grades and GPA | Credit-weighted GPA, required assessment scores, grade scenarios, explicit formulas and unreachable-target detection |
-| Academic advising | Retrieval of applicable academic documents, explanations with sources and clarification when data or rules are missing |
-| Degree planning | Remaining graduation requirements, course sequencing and validation of prerequisites, availability and credit limits |
-| Master's preparation | Official programme discovery within search criteria, requirements comparison, document checklists, deadlines and published funding information |
-| Access | Website and mobile application using a shared backend |
+| **Medina Nurbek**, Year 3 Software Engineering, AITU | Sole developer and author: research, requirements, architecture, backend, clients, integration, testing, documentation and task/repository management. |
+| **Kydyrbekova Aigerim Balgabayevna — Кыдырбекова Айгерим Балгабаевна**, Assistant Professor, School of Software Engineering | Supervisor: academic guidance, support in obtaining official sources and review at agreed checkpoints. She is not represented as a code contributor or as having approved this branch. |
 
-## Scope and data approach
+## Scope
 
-- Target coverage: all AITU educational programmes using the curricula and versions made available for the project.
-- Detailed assessment evaluation: **10 real courses**, with explicitly labelled mock documents for additional demonstrations where appropriate.
-- Primary student-data workflow: transcript upload with confirmation of extracted fields; manual assessment entry supports current courses.
-- Second-university case: adaptation to **one programme** with accessible documents, rather than full institutional deployment.
-- Master's information: official sources, retrieval dates and explicit treatment of missing or uncertain requirements. Programme search will not be described as exhaustive.
-- Moodle integration: conditional on an agreed access mechanism and API permissions; it is not assumed in the core workflow.
-- Optional machine learning: final-grade prediction only if a suitable dataset is obtained and the model can be evaluated against a baseline. External datasets will not establish validity for AITU without local evaluation.
-
-Training a language model from scratch is outside scope. The platform will not independently register courses, submit applications, modify official academic records or issue official scholarship, admission or progression decisions. Every function retained in the final committed scope must work and be tested.
-
-## Initial evidence of relevance
-
-An exploratory Google Forms questionnaire has **8 response records** in the 14 October snapshot, dated 10–12 October 2026. Recruitment continues for the 20 October submission.
-
-| Observation | Responses |
+| Area | Committed target |
 | --- | --- |
-| Reported GPA calculation | 6/8 |
-| Reported required-score calculation | 6/8 |
-| Reported checking remaining graduation requirements | 4/8 |
-| Reported at least one difficulty | 6/8 |
-| Found applicable rules unclear | 4/8 |
-| Found the next action unclear | 4/8 |
-| Had difficulty verifying an answer or calculation | 3/8 |
-| Accepted transcript or grade-file upload | 4/8 |
-| Intend to pursue master's study | 6/8; the other 2 selected “possibly” |
+| Records | Authenticated persistent profile; editable text-PDF transcript staging and explicit confirmation; manual assessments; owned export/deletion. |
+| Academic tools | Weighted GPA, cumulative GPA scenarios/targets, required assessment scores, applicable policy explanations, degree audit, independent plan validation and bounded generation. |
+| Planning | AND/OR prerequisites, permitted concurrency, term offerings, credit limits, elective groups, saved alternatives and version-aware revalidation. |
+| AITU | All programmes/cohorts in a frozen authoritative inventory. Ten real courses for detailed assessment evaluation; missing official curricula block complete-coverage claims. Mock sources support labelled demonstrations only. |
+| Other university | One programme at a second Kazakhstani university; four documented configuration contrasts. |
+| Master's preparation | At least five real programmes at two universities; official sources/intakes, status matching, documents, deadlines, published funding and saved preparation checklists. Search is not exhaustive. |
+| Clients | Website in Chrome/Edge and installable Android/iOS applications, all using shared services. |
 
-Required-score calculation and GPA scenarios were each selected as interesting future functions by **7/8** records. Two records exceeded the requested three-feature limit. In the six records that followed the limit, each function was selected by **5/6**. Original responses are preserved; this sensitivity comparison applies only to feature interest.
+LMS synchronisation (FR21) and a separately trained grade predictor (FR22) are **Could** extensions conditional on authorised access and suitable data. Training an LLM from scratch, course registration, modifying official records and submitting applications are outside scope. Advice is not an official scholarship, progression or admission decision.
 
-These are self-reported, descriptive findings from a small, self-selected sample: seven respondents reported third-year status and one first-year status. They do not establish university-wide demand, actual adoption or platform effectiveness. The questionnaire did not investigate specific master's application difficulties. Raw response records are not included in this repository.
+## Evidence and evaluation
 
-[Student questionnaire: Academic planning and working with grades at AITU](https://docs.google.com/forms/d/e/1FAIpQLSem1j3Ms7x5lUZmhoqon_Ai7K2eLvkpAFnjYhGcY9nRbwmYQQ/viewform)
+The 20 October survey snapshot contains **50 submission records**, with **30 answers to the six core need questions**. All three bachelor study years are represented (8/14/28 records). GPA and elective tasks each appear in 17/30; 28/30 report at least one difficulty. These voluntary self-reports do not establish population demand or application effectiveness. See the [aggregate evidence and item denominators](docs/evidence-of-relevance.md); raw records and private response-sheet links are excluded.
 
-The supervisor endorsed the proposed scope, transcript import and master's module, and indicated that the questionnaire is sufficient at the current stage. University representatives are expected to participate during testing. This feedback is academic guidance, not an institutional deployment agreement; survey records are not counted as interviews.
+The review analyses **15 publications**. The existing-system comparison covers **four systems against ten criteria**. Five exploratory Peer Advisor cases produced four correct outputs and one unrelated profile-recall answer; the setup/evidence limitations are recorded. One failure does not establish absence of all chat memory.
 
-## Proposed architecture
+The requirements register contains **22 FR + 12 NFR: 31 Must, 1 Should and 2 Could**. All production acceptance checks remain unverified. The prototype has nine scripted browser checks; rerun them using the commands below. Planned evaluation includes independent numeric/constraint references, parsing precision/recall, source applicability, security/recovery, native clients, a controlled 420-output tool comparison and a five-student task study. No improved academic outcomes are claimed.
 
-The architecture will separate:
+## Proposed technologies
 
-1. Web and mobile clients.
-2. Shared backend and confirmed student-profile storage.
-3. Versioned university, programme and curriculum configurations.
-4. Academic document retrieval with source references.
-5. Agent orchestration using a ready-made language model.
-6. Deterministic calculation tools and degree-plan validation.
-7. Master's information retrieval and preparation workflows.
+| Component | Proposed technology and decision state |
+| --- | --- |
+| Current prototype | Standalone HTML/CSS/JavaScript; browser local storage; synthetic fixtures; no network or model calls. Implemented. |
+| Shared backend | Python/FastAPI modular services. Proposed, not yet implemented. |
+| Persistence/retrieval | PostgreSQL, pgvector and private file storage; scoped hybrid retrieval. Proposed. |
+| Planning | Explicit validator plus OR-Tools CP-SAT; status/optimality checks. Proposed. |
+| Interaction | REST/HTTPS, durable job IDs and polling; optional SSE. Proposed. |
+| Model access | Replaceable gateway; evaluate eligible Gemini API, local Ollama and small-budget OpenAI alternatives. Provider/model not fixed; real-data route and costs require review. |
+| Clients | Web plus Android/iOS; frameworks and iOS build resources to confirm. |
+| Prototype QA | Node.js and Playwright 1.62.1 with Chromium; repository checks use Node built-ins. |
 
-The language model will interpret requests and explain tool results. Dedicated software components will calculate numerical results and check plan validity. The implementation stack and model provider are **not yet finalised** and will be documented after selection.
+See the [technology comparison](docs/technology-comparison.md) and [ADR 0001](docs/adr/0001-modular-backend.md).
 
-## Expected outcomes and evaluation
+## Repository structure
 
-Expected outcomes include working web and mobile applications, a shared backend, confirmed transcript import, calculation tools, document-based advising, validated degree plans, a master's preparation module, a second-university adaptation case and technical documentation.
+```text
+apps/web-prototype/    Runnable browser demonstrator
+apps/mobile/           Planned native-client boundary
+services/backend/      Planned shared API and academic-service boundary
+docs/                  Eleven editable chapters, references, requirements and ADRs
+diagrams/src/          Editable SVG sources
+diagrams/exports/      Readable PNG diagrams
+tests/prototype/       Executable browser regression checks
+tests/fixtures/        Synthetic/reference cases, no student records
+tests/results/         Sanitised dated check summaries
+scripts/               Repository validation and submission tools
+config/                Safe configuration examples and planned dependency notes
+.github/               Pull-request template and automated checks
+```
 
-Evaluation will cover:
+## Run the current prototype
 
-- Transcript extraction against manually checked course, credit and grade fields.
-- Calculations against independent reference cases, including missing data and infeasible targets.
-- Degree plans against known prerequisite, availability and credit-limit constraints.
-- Source support and applicability of academic and admissions information.
-- Student task completion, time, clarity and usability, with a manual or simpler-tool baseline where appropriate.
-- Review of academic rules and outputs by university representatives.
+Clone this same repository and enter its directory:
 
-No improvement in grades, retention or adoption is claimed from the initial questionnaire.
+```sh
+git clone https://github.com/medinanurbek/Development-of-an-Agentic-AI-Platform-for-University-Academic-Advising-and-Degree-Planning.git
+cd Development-of-an-Agentic-AI-Platform-for-University-Academic-Advising-and-Degree-Planning
+```
 
-## Current work and next steps
+During review, use the `ACP-1-documentation-and-repository-baseline` branch; after it is reviewed/merged, use `main`.
 
-- Project scope reviewed with the supervisor.
-- Questionnaire created and the first eight records analysed.
-- Interim Project Proposal and Evidence of Relevance prepared for the 14 October checkpoint.
-- Next: expand recruitment, refine requirements, obtain and review curricula, select technologies and prepare validation scenarios.
-- Live LMS access and a dataset for optional prediction remain unresolved.
+Open `apps/web-prototype/index.html` in Chrome or Edge. No account, API key, database or paid service is needed. Use **Load sample transcript**, correct the missing credits and confirm; inspect GPA targets; validate/correct a plan; save a master's checklist. **Reset demo** restores synthetic data. File selection does not parse/upload real files; the advisor is scripted. Browser storage is local to that browser and is not shared-client persistence.
 
-## Development setup
+## Install and run checks
 
-This repository currently contains project documentation. There is no runnable application yet. Installation, environment configuration, test commands and deployment instructions will be added with the implementation.
+Use Node.js 24 LTS and npm. Install the exact lockfile dependencies and Chromium:
 
-The task-tracker link has not yet been provided.
+```sh
+npm ci
+npx playwright install chromium
+npm run check:repository
+npm test
+```
+
+On a Linux machine without browser libraries, use `npx playwright install --with-deps chromium` if permitted by the environment. `npm test` runs repository checks and nine browser scenarios. Generated screenshots, downloads and local run details go to ignored `artifacts/`. Sanitised dated summaries may be deliberately added under `tests/results/`. These are prototype checks, not production, native-mobile or real-user acceptance tests.
+
+The future backend/mobile folders document intended component boundaries only. Their installation, execution and acceptance commands will be added with runnable implementations; no backend service is claimed by the prototype commands.
+
+## Next steps and review status
+
+1. Review the candidate documentation/prototype PR and record selected significant-change supervisor feedback.
+2. Complete task deadlines/dependencies and publish links from ACP tasks to actual commits/PRs.
+3. Obtain the official programme/cohort inventory, curricula, ten assessment sources and a second-university source set.
+4. Implement accounts/storage, import, deterministic tools, planning, source-grounded orchestration and master's workflows.
+5. Deliver/test real Android/iOS clients and execute all mandatory acceptance criteria.
+
+All work uses genuine dated commits in the same repository. `pre-defense-1`, `pre-defense-2` and `final-pre-defense` will identify the actual submissions at their respective stages; future stages and supervisor approval are not fabricated. See [CONTRIBUTING](CONTRIBUTING.md).
+
+## Data and configuration
+
+Only synthetic fixtures and aggregate research summaries belong in this repository. Never commit real transcripts, raw survey exports, passwords, tokens, `.env` or private correspondence. Use [the placeholder environment](config/.env.example); it is a future-backend contract, not configuration consumed by the HTML prototype. Check staged changes before every push. No project licence has been selected yet; third-party packages retain their own licences.
