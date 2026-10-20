@@ -1,0 +1,17 @@
+{
+  "name": "aitu-academic-planner-diploma",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Synthetic browser prototype and diploma documentation",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "check:repository": "node scripts/check-repository.cjs",
+    "test:prototype": "node tests/prototype/run.cjs",
+    "test": "npm run check:repository && npm run test:prototype"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

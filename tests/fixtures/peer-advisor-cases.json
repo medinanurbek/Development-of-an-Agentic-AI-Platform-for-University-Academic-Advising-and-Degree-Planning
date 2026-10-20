@@ -1,0 +1,159 @@
+{
+  "data_kind": "synthetic",
+  "purpose": "Independent reference cases and reported observations, not production acceptance",
+  "cases": [
+    {
+      "id": "T01",
+      "task": "Weighted GPA and unreachable cumulative target",
+      "courses": [
+        {
+          "id": "A",
+          "credits": 5,
+          "grade": 4
+        },
+        {
+          "id": "B",
+          "credits": 10,
+          "grade": 3
+        },
+        {
+          "id": "C",
+          "credits": 5,
+          "grade": 0
+        },
+        {
+          "id": "D",
+          "credits": 10,
+          "grade": 2
+        }
+      ],
+      "future_credits": 15,
+      "target_gpa": 3,
+      "grade_maximum": 4,
+      "expected": {
+        "gpa": "70/30",
+        "required_average": "65/15",
+        "target_reachable": false,
+        "max_gpa": "130/45"
+      },
+      "reported_peer_result": "PASS"
+    },
+    {
+      "id": "T02",
+      "task": "Missing credits",
+      "courses": [
+        {
+          "id": "A",
+          "credits": 5,
+          "grade": 4
+        },
+        {
+          "id": "B",
+          "credits": null,
+          "grade": 3
+        },
+        {
+          "id": "C",
+          "credits": 10,
+          "grade": 2
+        }
+      ],
+      "expected": "Request B credits; no invented exact GPA",
+      "reported_peer_result": "PASS"
+    },
+    {
+      "id": "T03A",
+      "task": "Same-chat profile recall",
+      "profile": {
+        "code": "PA-731",
+        "programme": "Software Engineering",
+        "year": 3,
+        "gpa": 2.7
+      },
+      "expected": "Return fields or state unavailability",
+      "reported_peer_result": "FAIL",
+      "evidence_limit": "Operator confirmed setup; original setup and final generation completion not independently captured. Unrelated deadline answer observed; no universal memory conclusion."
+    },
+    {
+      "id": "T04",
+      "task": "AND/OR prerequisite plans",
+      "credits_per_course": 4,
+      "limit": 8,
+      "completed": [
+        "A"
+      ],
+      "prerequisites": {
+        "B": [],
+        "C": {
+          "or": [
+            "A",
+            "B"
+          ]
+        },
+        "D": [
+          "C"
+        ],
+        "E": {
+          "and": [
+            "A",
+            "B"
+          ]
+        }
+      },
+      "expected": {
+        "plan_CE_BD": "INVALID: B before E missing",
+        "plan_BC_DE": "VALID",
+        "minimum_terms": 2
+      },
+      "reported_peer_result": "PASS"
+    },
+    {
+      "id": "T05",
+      "task": "Annual availability and elapsed terms",
+      "credits_per_course": 4,
+      "limit": 8,
+      "offerings": {
+        "A": [
+          1
+        ],
+        "B": [
+          1
+        ],
+        "C": [
+          2
+        ],
+        "D": [
+          1,
+          2,
+          3
+        ]
+      },
+      "prerequisites": {
+        "B": [
+          "A"
+        ],
+        "C": [
+          "B"
+        ]
+      },
+      "expected": {
+        "terms": [
+          [
+            "A",
+            "D"
+          ],
+          [],
+          [],
+          [
+            "B"
+          ],
+          [
+            "C"
+          ]
+        ],
+        "elapsed_terms": 5
+      },
+      "reported_peer_result": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "run_utc": "2026-10-20T16:55:24.103Z",
+  "node": "24.19.0",
+  "playwright": "1.62.1",
+  "prototype_sha256": "e0ad48b85bc0bdaefa1146a51d6089accff331a9b7ccc8d08e6088fc6302ebbd",
+  "scope": "Synthetic browser prototype only; no backend/native/user acceptance",
+  "all_pass": true,
+  "checks": [
+    {
+      "id": "PX01",
+      "scenario": "Overview and record distinction",
+      "status": "PASS",
+      "result": "2.33 GPA; 30 graded-attempt credits; 25 earned credits shown separately."
+    },
+    {
+      "id": "PX02",
+      "scenario": "Transcript staging and explicit confirmation",
+      "status": "PASS",
+      "result": "Missing B credits block confirmation; 10 credits and review confirmation create revision 2."
+    },
+    {
+      "id": "PX03",
+      "scenario": "GPA, missing data and required score",
+      "status": "PASS",
+      "result": "2.33 current GPA; 4.33 required; 2.89 maximum. Missing credits flagged; total target 90 requires 147/100."
+    },
+    {
+      "id": "PX04",
+      "scenario": "Course plan validation and alternatives",
+      "status": "PASS",
+      "result": "Availability and prior-C violations flagged; saving blocked until valid. Two alternatives saved; 5-credit cap produces three terms."
+    },
+    {
+      "id": "PX05",
+      "scenario": "Masters matching and checklist",
+      "status": "PASS",
+      "result": "Unmet GPA, pending graduation and unknown language/funding visible. Checklist retained; empty search result explicit."
+    },
+    {
+      "id": "PX06",
+      "scenario": "Scripted advisor and visible tool trace",
+      "status": "PASS",
+      "result": "Target reply matches 4.33/2.89 and shows profile/tool steps; unsupported queries disclose prototype limit."
+    },
+    {
+      "id": "PX07",
+      "scenario": "Source version changes",
+      "status": "PASS",
+      "result": "Official inventories explicitly missing; publishing next demo version marks an earlier saved plan for revalidation."
+    },
+    {
+      "id": "PX08",
+      "scenario": "Export and deletion confirmation",
+      "status": "PASS",
+      "result": "Demo JSON downloadable; deletion opens a labelled modal and Escape cancels without deleting."
+    },
+    {
+      "id": "PX09",
+      "scenario": "Responsive layout",
+      "status": "PASS",
+      "result": "No body overflow across seven student screens at 390px; overview also checked at 360, 430, 768 and 1440px. Browser simulations, not native Android/iOS tests."
+    }
+  ],
+  "runtime_errors": [],
+  "external_requests": []
+}

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="535" viewBox="0 0 1000 535"><rect width="100%" height="100%" fill="white"/>
+<rect x="337" y="170" width="326" height="190" fill="#E5E5E5" stroke="#555555" stroke-width="1.3"/>
+<text x="500.0" y="222.265" font-family="Times New Roman" font-size="19" font-weight="bold" text-anchor="middle" dominant-baseline="central">Academic Advising and</text>
+<text x="500.0" y="243.73499999999999" font-family="Times New Roman" font-size="19" font-weight="bold" text-anchor="middle" dominant-baseline="central">Degree Planning Platform</text>
+<text x="500.0" y="287.395" font-family="Times New Roman" font-size="17" font-weight="normal" text-anchor="middle" dominant-baseline="central">Website and Android / iOS</text>
+<text x="500.0" y="306.60499999999996" font-family="Times New Roman" font-size="17" font-weight="normal" text-anchor="middle" dominant-baseline="central">Personal records and verified advice</text>
+<rect x="30" y="35" width="240" height="100" fill="#F3F3F3" stroke="#555555" stroke-width="1.3"/>
+<text x="150.0" y="71.0" font-family="Times New Roman" font-size="19" font-weight="bold" text-anchor="middle" dominant-baseline="central">Student</text>
+<text x="150.0" y="107.0" font-family="Times New Roman" font-size="17" font-weight="normal" text-anchor="middle" dominant-baseline="central">Own records, questions, plans</text>
+<rect x="30" y="215" width="240" height="100" fill="#F3F3F3" stroke="#555555" stroke-width="1.3"/>
+<text x="150.0" y="251.0" font-family="Times New Roman" font-size="19" font-weight="bold" text-anchor="middle" dominant-baseline="central">Academic reviewer</text>
+<text x="150.0" y="287.0" font-family="Times New Roman" font-size="17" font-weight="normal" text-anchor="middle" dominant-baseline="central">Manual review of test evidence</text>
+<rect x="30" y="395" width="240" height="100" fill="#F3F3F3" stroke="#555555" stroke-width="1.3"/>
+<text x="150.0" y="431.0" font-family="Times New Roman" font-size="19" font-weight="bold" text-anchor="middle" dominant-baseline="central">Privileged operator</text>
+<text x="150.0" y="467.0" font-family="Times New Roman" font-size="17" font-weight="normal" text-anchor="middle" dominant-baseline="central">Curricula and sources</text>
+<rect x="730" y="35" width="240" height="100" fill="#F3F3F3" stroke="#555555" stroke-width="1.3"/>
+<text x="850.0" y="71.0" font-family="Times New Roman" font-size="19" font-weight="bold" text-anchor="middle" dominant-baseline="central">Official university sources</text>
+<text x="850.0" y="107.0" font-family="Times New Roman" font-size="17" font-weight="normal" text-anchor="middle" dominant-baseline="central">Public pages and supplied files</text>
+<rect x="730" y="215" width="240" height="100" fill="#F3F3F3" stroke="#555555" stroke-width="1.3"/>
+<text x="850.0" y="251.0" font-family="Times New Roman" font-size="19" font-weight="bold" text-anchor="middle" dominant-baseline="central">Selected model runtime</text>
+<text x="850.0" y="287.0" font-family="Times New Roman" font-size="17" font-weight="normal" text-anchor="middle" dominant-baseline="central">Local or approved cloud service</text>
+<polyline points="730,395 970,395 970,495 730,495 730,395" fill="none" stroke="#555555" stroke-width="1.5" stroke-dasharray="5 5"/>
+<rect x="730" y="395" width="240" height="100" fill="#F3F3F3" stroke="#555555" stroke-width="1.3" stroke-dasharray="5 5"/>
+<text x="850.0" y="431.0" font-family="Times New Roman" font-size="19" font-weight="bold" text-anchor="middle" dominant-baseline="central">University LMS</text>
+<text x="850.0" y="467.0" font-family="Times New Roman" font-size="17" font-weight="normal" text-anchor="middle" dominant-baseline="central">Authorised connector only</text>
+<polyline points="270,85 303,85 303,215 337,215" fill="none" stroke="#555555" stroke-width="1.5"/>
+<polyline points="328.819308252926,218.7518372218629 337,215 328.819308252926,211.2481627781371" fill="#555555" stroke="#555555" stroke-width="1.5"/>
+<polyline points="278.180691747074,81.2481627781371 270,85 278.180691747074,88.7518372218629" fill="#555555" stroke="#555555" stroke-width="1.5"/>
+<rect x="290.3333333333333" y="141.33333333333334" width="25.0" height="13.333333333333334" fill="white"/>
+<text x="303" y="148.0" font-family="Times New Roman" font-size="17" font-weight="bold" text-anchor="middle" dominant-baseline="central">R1</text>
+<polyline points="270,265 337,265" fill="none" stroke="#555555" stroke-width="1.5"/>
+<polyline points="328.819308252926,268.7518372218629 337,265 328.819308252926,261.2481627781371" fill="#555555" stroke="#555555" stroke-width="1.5"/>
+<polyline points="278.180691747074,261.2481627781371 270,265 278.180691747074,268.7518372218629" fill="#555555" stroke="#555555" stroke-width="1.5"/>
+<rect x="290.3333333333333" y="243.33333333333334" width="25.0" height="13.333333333333334" fill="white"/>
+<text x="303" y="250.0" font-family="Times New Roman" font-size="17" font-weight="bold" text-anchor="middle" dominant-baseline="central">R2</text>
+<polyline points="270,445 303,445 303,315 337,315" fill="none" stroke="#555555" stroke-width="1.5"/>
+<polyline points="328.819308252926,318.7518372218629 337,315 328.819308252926,311.2481627781371" fill="#555555" stroke="#555555" stroke-width="1.5"/>
+<polyline points="278.180691747074,441.2481627781371 270,445 278.180691747074,448.7518372218629" fill="#555555" stroke="#555555" stroke-width="1.5"/>
+<rect x="290.3333333333333" y="376.3333333333333" width="25.0" height="13.333333333333334" fill="white"/>
+<text x="303" y="383.0" font-family="Times New Roman" font-size="17" font-weight="bold" text-anchor="middle" dominant-baseline="central">R3</text>
+<polyline points="663,215 697,215 697,85 730,85" fill="none" stroke="#555555" stroke-width="1.5"/>
+<polyline points="721.819308252926,88.7518372218629 730,85 721.819308252926,81.2481627781371" fill="#555555" stroke="#555555" stroke-width="1.5"/>
+<polyline points="671.180691747074,211.2481627781371 663,215 671.180691747074,218.7518372218629" fill="#555555" stroke="#555555" stroke-width="1.5"/>
+<rect x="684.3333333333334" y="142.33333333333334" width="25.0" height="13.333333333333334" fill="white"/>
+<text x="697" y="149.0" font-family="Times New Roman" font-size="17" font-weight="bold" text-anchor="middle" dominant-baseline="central">R4</text>
+<polyline points="663,265 730,265" fill="none" stroke="#555555" stroke-width="1.5"/>
+<polyline points="721.819308252926,268.7518372218629 730,265 721.819308252926,261.2481627781371" fill="#555555" stroke="#555555" stroke-width="1.5"/>
+<polyline points="671.180691747074,261.2481627781371 663,265 671.180691747074,268.7518372218629" fill="#555555" stroke="#555555" stroke-width="1.5"/>
+<rect x="684.3333333333334" y="243.33333333333334" width="25.0" height="13.333333333333334" fill="white"/>
+<text x="697" y="250.0" font-family="Times New Roman" font-size="17" font-weight="bold" text-anchor="middle" dominant-baseline="central">R5</text>
+<polyline points="663,315 697,315 697,445 730,445" fill="none" stroke="#555555" stroke-width="1.5" stroke-dasharray="5 5"/>
+<polyline points="721.819308252926,448.7518372218629 730,445 721.819308252926,441.2481627781371" fill="#555555" stroke="#555555" stroke-width="1.5"/>
+<polyline points="671.180691747074,311.2481627781371 663,315 671.180691747074,318.7518372218629" fill="#555555" stroke="#555555" stroke-width="1.5"/>
+<rect x="684.3333333333334" y="376.3333333333333" width="25.0" height="13.333333333333334" fill="white"/>
+<text x="697" y="383.0" font-family="Times New Roman" font-size="17" font-weight="bold" text-anchor="middle" dominant-baseline="central">R6</text>
+</svg>
