@@ -2,9 +2,10 @@
 
 Diploma project by **Medina Nurbek**, Software Engineering, Astana IT University (AITU). The proposed platform combines confirmed student records, reproducible academic calculations, degree audits, constraint-checked course plans and preparation for selected master's programmes.
 
-**Current status — 20 October 2026:** analysis, design and an interactive browser prototype. The prototype runs locally with synthetic data and scripted responses. A production backend, live AI, actual transcript parsing and installable Android/iOS applications are not implemented. This branch is a candidate documentation baseline pending selected significant-change review by the supervisor.
+**Current status — 20 October 2026:** published analysis, design and an interactive browser prototype. The prototype runs locally with synthetic data and scripted responses. Production backend, live AI, transcript parsing and installable Android/iOS applications are planned. Supervisor review of the published baseline remains pending.
 
 - [Project documentation](docs/README.md)
+- [Architecture and diagrams](#architecture)
 - [YouTrack project and real ACP tasks](https://medina-academic-planner.youtrack.cloud/issues/ACP)
 - [Interactive prototype source](apps/web-prototype/index.html)
 - [Contribution and review workflow](CONTRIBUTING.md)
@@ -28,7 +29,7 @@ Expected outcomes are working web/Android/iOS clients with a shared backend; con
 | Member | Responsibility |
 | --- | --- |
 | **Medina Nurbek**, Year 3 Software Engineering, AITU | Sole developer and author: research, requirements, architecture, backend, clients, integration, testing, documentation and task/repository management. |
-| **Kydyrbekova Aigerim Balgabayevna — Кыдырбекова Айгерим Балгабаевна**, Assistant Professor, School of Software Engineering | Supervisor: academic guidance, support in obtaining official sources and review at agreed checkpoints. She is not represented as a code contributor or as having approved this branch. |
+| **Kydyrbekova Aigerim Balgabayevna — Кыдырбекова Айгерим Балгабаевна**, Assistant Professor, School of Software Engineering | Supervisor: academic guidance, support in obtaining official sources and review at agreed checkpoints. Review of this published documentation baseline remains pending. |
 
 ## Scope
 
@@ -67,6 +68,43 @@ The requirements register contains **22 FR + 12 NFR: 31 Must, 1 Should and 2 Cou
 
 See the [technology comparison](docs/technology-comparison.md) and [ADR 0001](docs/adr/0001-modular-backend.md).
 
+## Architecture
+
+The proposed system uses one modular backend shared by the website and Android/iOS applications. The agent interprets requests, retrieves permitted context and calls academic tools. Dedicated services calculate results, audit requirements and validate plans. University-specific rules are versioned configurations, and each saved result retains its profile and source revisions.
+
+### System context
+
+Students work with their own academic records and plans. An authorised operator maintains university sources; an academic reviewer checks institutional rules and evaluation evidence. The platform connects to official sources and a selected model runtime. The LMS connection is conditional on authorised access.
+
+![System context diagram showing students, academic review, source administration, official sources, model runtime and an optional LMS connector](diagrams/exports/01_system_context.png)
+
+[Editable SVG](diagrams/src/01_system_context.svg) · [Open full-size diagram](diagrams/exports/01_system_context.png)
+
+### Main components
+
+| Layer | Responsibility |
+| --- | --- |
+| Web, Android and iOS clients | Profile and transcript review, calculations, plans, master's checklists and chat. |
+| API and access control | Authentication, record ownership and REST/HTTPS workflow contracts. |
+| Agent orchestrator and model gateway | Typed tool calls, workflow state, provider selection and budget/data-routing controls. |
+| Academic services | Profile/import, explicit calculations, degree audit, independent validation and CP-SAT planning. |
+| Sources and master's preparation | Scoped retrieval, source versioning, programme discovery, requirement matching and checklists. |
+| Persistence and jobs | PostgreSQL/pgvector, private file storage, revisions, durable jobs, export/deletion and recovery. |
+
+![Draft component diagram for the shared backend, academic tools, model gateway and storage](diagrams/exports/03_components_draft.png)
+
+[Editable SVG](diagrams/src/03_components_draft.svg) · [Open full-size diagram](diagrams/exports/03_components_draft.png)
+
+### Use cases
+
+The student imports and confirms records, enters assessment scores, explores GPA targets, asks sourced questions, audits and plans remaining courses, compares alternatives and prepares master's applications. The operator maintains curricula and source versions.
+
+![Use case diagram showing the student workflows and operator source maintenance](diagrams/exports/02_use_cases.png)
+
+[Editable SVG](diagrams/src/02_use_cases.svg) · [Open full-size diagram](diagrams/exports/02_use_cases.png)
+
+The diagrams describe the target architecture. The current runnable implementation is the synthetic browser prototype. See the [architectural description and requirement mapping](docs/architecture.md), [diagram source directory](diagrams/README.md) and [architecture decision record](docs/adr/0001-modular-backend.md).
+
 ## Repository structure
 
 ```text
@@ -93,7 +131,7 @@ git clone https://github.com/medinanurbek/Development-of-an-Agentic-AI-Platform-
 cd Development-of-an-Agentic-AI-Platform-for-University-Academic-Advising-and-Degree-Planning
 ```
 
-During review, use the `ACP-1-documentation-and-repository-baseline` branch; after it is reviewed/merged, use `main`.
+Use the default `main` branch for the published documentation and runnable prototype. [PR #1](https://github.com/medinanurbek/Development-of-an-Agentic-AI-Platform-for-University-Academic-Advising-and-Degree-Planning/pull/1) records the publication changes; supervisor review remains pending.
 
 Open `apps/web-prototype/index.html` in Chrome or Edge. No account, API key, database or paid service is needed. Use **Load sample transcript**, correct the missing credits and confirm; inspect GPA targets; validate/correct a plan; save a master's checklist. **Reset demo** restores synthetic data. File selection does not parse/upload real files; the advisor is scripted. Browser storage is local to that browser and is not shared-client persistence.
 
