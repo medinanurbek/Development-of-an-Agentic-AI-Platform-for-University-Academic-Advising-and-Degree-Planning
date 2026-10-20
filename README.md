@@ -9,6 +9,7 @@ Diploma project by **Medina Nurbek**, Software Engineering, Astana IT University
 - [Interactive prototype source](apps/web-prototype/index.html)
 - [Contribution and review workflow](CONTRIBUTING.md)
 - [24 October submission checklist](docs/submission-checklist.md)
+- [Assigned backlog, deadlines and requirement traceability](docs/tracker-and-traceability.md)
 
 ## Problem statement
 
@@ -114,7 +115,7 @@ The future backend/mobile folders document intended component boundaries only. T
 ## Next steps and review status
 
 1. Review the candidate documentation/prototype PR and record selected significant-change supervisor feedback.
-2. Complete task deadlines/dependencies and publish links from ACP tasks to actual commits/PRs.
+2. Review the proposed implementation dates and recorded predecessor links. Sixteen assigned tasks now exist; ACP-1/ACP-2/ACP-8 link to the actual PR.
 3. Obtain the official programme/cohort inventory, curricula, ten assessment sources and a second-university source set.
 4. Implement accounts/storage, import, deterministic tools, planning, source-grounded orchestration and master's workflows.
 5. Deliver/test real Android/iOS clients and execute all mandatory acceptance criteria.

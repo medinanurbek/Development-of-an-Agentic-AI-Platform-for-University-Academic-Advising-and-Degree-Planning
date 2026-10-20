@@ -16,6 +16,7 @@ Public analysis and design baseline dated 20 October 2026. The editable Markdown
 | 10 | [Project Management And Risks](project-management-and-risks.md) |
 | 11 | [Supervisor Feedback](supervisor-feedback.md) |
 
+- [Current tracker and requirement traceability](tracker-and-traceability.md)
 - [References](references.md)
 - [Requirement acceptance register](requirements-register.json)
 - [Architecture decision record](adr/0001-modular-backend.md)

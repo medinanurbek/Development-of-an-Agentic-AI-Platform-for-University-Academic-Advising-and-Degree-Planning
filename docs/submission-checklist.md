@@ -7,7 +7,9 @@ Checkpoint: 24 October 2026. Owner: Medina Nurbek. This candidate baseline requi
 - [x] Three editable SVG diagrams and readable PNG exports are included.
 - [x] Runnable synthetic HTML prototype and reproducible browser checks are included.
 - [x] Safe configuration examples, dependency definitions and .gitignore are included.
-- [ ] Finish ACP ownership/outcomes/acceptance/deadlines and links to actual changes.
+- [x] Sixteen ACP tasks have owners, outcomes, acceptance criteria and due dates; ACP-1/ACP-8 link to the actual PR.
+- [x] Record native predecessor links for the implementation and submission tasks.
+- [ ] Review the proposed implementation dates at the supervisor checkpoint.
 - [ ] Record selected significant-change supervisor review and any revisions.
 - [ ] Verify supervisor/committee access and demonstrate history, prototype and checks.
 - [ ] Identify the exact reviewed submission SHA and create the stage tag once.

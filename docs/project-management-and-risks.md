@@ -1,5 +1,7 @@
 # 10 Project Management and Risks
 
+This chapter preserves the earlier management snapshot on 20 October 2026. The [current tracker and traceability record](tracker-and-traceability.md) supersedes its seven-task/README-only repository status; the implementation scope, milestones and risk analysis remain proposed.
+
 ## 10.1 Responsibilities and traceability
 
 Medina Nurbek owns analysis, implementation, testing and documentation. The supervisor provides academic guidance and supports source access; university representatives and student participants contribute review/testing when arranged. These are responsibilities within a solo project, not a multi-person development team. Weekly task/risk review and supervisor checkpoints at major milestones are proposed.
